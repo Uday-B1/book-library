@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html><head><title>Library Catalog</title></head>
+<html>
+<head>
+    <title>My Book Library</title>
+</head>
 <body>
-    <h1>Online Library</h1>
-    <p>Browse our awesome books.</p>
+    <h1>Online Library Catalog</h1>
+    <p>Browse our collection of awesome books.</p>
+    
     <hr>
-    <h2>Fiction Books</h2>
+
+    <h2>Fiction & Story Books</h2>
     <ul>
-        <li><strong>Harry Potter</strong></li>
-        <li><strong>The Alchemist</strong></li>
+        <li>
+            <strong>Harry Potter</strong> by <em>J.K. Rowling</em><br>
+            <p>A great story about a young wizard and his adventures.</p>
+        </li>
+        <li>
+            <strong>The Alchemist</strong> by <em>Paulo Coelho</em><br>
+            <p>A novel about finding your true destiny.</p>
+        </li>
     </ul>
-</body></html>
+
+    <h2>Programming & Tech Books</h2>
+    
+    <table border="1" cellpadding="8" cellspacing="0" width="70%">
+        <tr>
+            <th>Book Title</th>
+            <th>Author Name</th>
+            <th>Publish Year</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>Clean Code</td>
+            <td>Robert C. Martin</td>
+            <td>2008</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Learn Python the Hard Way</td>
+            <td>Zed Shaw</td>
+            <td>2013</td>
+            <td>Out of Stock</td>
+        </tr>
+        <tr>
+            <td>JavaScript for Dummies</td>
+            <td>Emily Vander Veer</td>
+            <td>2004</td>
+            <td>Available</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+    
+    
+    <h3>Suggest a new book for our library</h3>
+    <form action="#">
+        <label>Book Title:</label> 
+        <input type="text" name="bookName" required><br><br>
+        
+        <label>Author Name:</label> 
+        <input type="text" name="authorName" required><br><br>
+        
+        <label>Why should we add it?</label><br>
+        <textarea name="reason" rows="3" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Send Suggestion">
+    </form>
+</body>
+</html>
